@@ -1,0 +1,11 @@
+{% extends "pages/base.html" %}
+
+{% block title %}{{post.title}}{% endblock %}
+
+{% block content %}
+    <h1><a href='post/{{post.id}}'>{{post.title}}</a></h1>
+    <h1>on {{post.created_at}}</h1>
+    <h2>{{post.content|safe|linebreaks}}</h2>
+        
+    
+{% endblock %}
